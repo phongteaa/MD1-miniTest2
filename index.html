@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 8, 4, 6, 7, 0];
+    let x = parseInt(prompt("Nhap vao so can tim x"));
+    let indexOfX = -1;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === x) {
+            indexOfX = i;
+            break;
+        }
+    }
+    if (indexOfX === -1) {
+        document.write("Khong tim thay x");
+    }
+    else {
+        document.write("Index cua x la " + indexOfX);
+    }
+</script>
+
+</body>
+</html>

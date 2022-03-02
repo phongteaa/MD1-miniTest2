@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="input" type="text"/>
+<button onclick="daoNguoc()">Dao Nguoc</button>
+<output id="xem"></output>
+
+
+<script>
+    //Bai 3
+    function daoNguoc() {
+        var char = document.getElementById("input").value;
+        var length = char.length;
+        var output = '';
+        for (var i = 0; i < length; i++) {
+            var character = char[i];
+            if (character === character.toLowerCase()) {
+                output = output + character.toUpperCase();
+            }
+            else {
+                output = output + character.toLowerCase();
+            }
+        }
+        document.getElementById("xem").innerText = output;
+    }
+
+
+</script>
+
+</body>
+</html>
